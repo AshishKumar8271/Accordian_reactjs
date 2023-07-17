@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color:blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+
+}
+article{
+    display: grid;
+    width: 60vw;
+    padding:20px;
+    background-color: white;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+    border-radius: 6px;
+}
+.QAcontainer{
+    padding:12px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px grey;
+    margin-bottom: 12px;
+}
+.quesAns{
+    display: flex;
+    justify-content: space-between;
+}
+#show{
+    outline: none;
+    border: none;
+    background:transparent;
+    font-size:1.6rem;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+#show > svg:hover{
+    transform: rotate(180deg);
+    transition: all 1s ease;
+}
+.ans{
+    /* display: none; */
+    margin-top: 10px;
+    color: grey;
+    font-size: .875rem;
+}
+@media only screen and (min-width:681px) and (max-width : 1100px){
+    article{
+        width:80vw;
+    }
+}
+@media only screen and (max-width:680px) {
+    article{
+        display: block;
+        width: 80vw;
+    }
+    h1{
+        font-size:1.2rem;
+        margin-bottom: 12px;
+    }
+    h3{
+        font-size: 1rem;
+    }
+}
